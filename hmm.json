@@ -1,0 +1,77 @@
+{
+  "dependencies": [
+    {
+      "name": "lime",
+      "type": "haxelib",
+      "version": "7.9.0"
+    },
+    {
+      "name": "openfl",
+      "type": "haxelib",
+      "version": "9.1.0"
+    },
+    {
+      "name": "flixel",
+      "type": "haxelib",
+      "version": "4.9.0"
+    },
+    {
+      "name": "flixel-addons",
+      "type": "haxelib",
+      "version": "2.10.0"
+    },
+    {
+      "name": "flixel-tools",
+      "type": "haxelib",
+      "version": "1.5.1"
+    },
+    {
+      "name": "flixel-ui",
+      "type": "haxelib",
+      "version": "2.3.3"
+    },
+    {
+      "name": "actuate",
+      "type": "haxelib",
+      "version": null
+    },
+    {
+      "name": "faxe",
+      "type": "git",
+      "dir": null,
+      "ref": "master",
+      "url": "https://github.com/ashea-code/faxe"
+    },
+    {
+      "name": "hscript",
+      "type": "haxelib",
+      "version": null
+    },
+    {
+      "name": "hxvm-luajit",
+      "type": "haxelib",
+      "version": null,
+    },
+    {
+      "name": "extension-webm",
+      "type": "git",
+      "dir": null,
+      "ref": "master",
+      "url": "https://github.com/Daninnocent/extension-webm"
+    },
+    {
+      "name": "discord_rpc",
+      "type": "git",
+      "dir": null,
+      "ref": "master",
+      "url": "https://github.com/Aidan63/linc_discord-rpc"
+    },
+    {
+      "name": "linc_luajit",
+      "type": "git",
+      "dir": null,
+      "ref": "master",
+      "url": "https://github.com/Daninnocent/linc_luajit"
+    }
+  ]
+}
