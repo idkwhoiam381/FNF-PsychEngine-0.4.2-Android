@@ -7,6 +7,7 @@ import flixel.FlxState;
 import flixel.addons.transition.FlxTransitionableState;
 import flixel.addons.ui.FlxUIState;
 import openfl.utils.Assets;
+
 #if mobileC
 import flixel.FlxCamera;
 import flixel.input.actions.FlxActionInput;
@@ -53,9 +54,9 @@ class MusicBeatState extends FlxUIState
 
 			super.destroy();
 		}
-		#else
+	#else
 		public function addVirtualPad(?DPad, ?Action){};
-		#end
+	#end
 
 	override function create() {
 		var skip:Bool = FlxTransitionableState.skipNextTransOut;
