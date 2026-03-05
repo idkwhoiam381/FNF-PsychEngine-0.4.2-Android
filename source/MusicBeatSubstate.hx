@@ -30,35 +30,35 @@ class MusicBeatSubstate extends FlxSubState
 		return PlayerSettings.player1.controls;
 
 	#if mobileC
-	var _virtualpad:FlxVirtualPad;
+		var _virtualpad:FlxVirtualPad;
 
-	var trackedinputs:Array<FlxActionInput> = [];
+		var trackedinputs:Array<FlxActionInput> = [];
 
-	// adding virtualpad to state
-	public function addVirtualPad(?DPad:FlxDPadMode, ?Action:FlxActionMode) {
-		_virtualpad = new FlxVirtualPad(DPad, Action);
-		_virtualpad.alpha = 0.75;
-		var padsubcam = new FlxCamera();
-		FlxG.cameras.add(padsubcam);
-		padsubcam.bgColor.alpha = 0;
-		_virtualpad.cameras = [padsubcam];
-		add(_virtualpad);
-		controls.setVirtualPad(_virtualpad, DPad, Action);
-		trackedinputs = controls.trackedinputs;
-		controls.trackedinputs = [];
+		// adding virtualpad to state
+		public function addVirtualPad(?DPad:FlxDPadMode, ?Action:FlxActionMode) {
+			_virtualpad = new FlxVirtualPad(DPad, Action);
+			_virtualpad.alpha = 0.75;
+			var padsubcam = new FlxCamera();
+			FlxG.cameras.add(padsubcam);
+			padsubcam.bgColor.alpha = 0;
+			_virtualpad.cameras = [padsubcam];
+			add(_virtualpad);
+			controls.setVirtualPad(_virtualpad, DPad, Action);
+			trackedinputs = controls.trackedinputs;
+			controls.trackedinputs = [];
 
-		#if android
-		controls.addAndroidBack();
-		#end
-	}
+			#if android
+			controls.addAndroidBack();
+			#end
+		}
 	
-	override function destroy() {
-		controls.removeFlxInput(trackedinputs);
+		override function destroy() {
+			controls.removeFlxInput(trackedinputs);
 
-		super.destroy();
-	}
+			super.destroy();
+		}
 	#else
-	public function addVirtualPad(?DPad, ?Action){};
+		public function addVirtualPad(?DPad, ?Action){};
 	#end
 
 	override function update(elapsed:Float)
