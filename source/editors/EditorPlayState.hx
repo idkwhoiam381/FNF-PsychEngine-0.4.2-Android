@@ -142,7 +142,7 @@ class EditorPlayState extends MusicBeatState
 		FlxG.mouse.visible = false;
 
 		#if mobileC
-		mcontrols = new Mobilecontrols();
+		mcontrols = new MobileControls();
 		switch (mcontrols.mode)
 		{
 			case VIRTUALPAD_RIGHT | VIRTUALPAD_LEFT | VIRTUALPAD_CUSTOM:
