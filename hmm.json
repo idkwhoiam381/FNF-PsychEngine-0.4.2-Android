@@ -54,8 +54,10 @@
     },
     {
       "name": "extension-webview",
-      "type": "haxelib",
-      "version": null
+      "type": "git",
+      "dir": null,
+      "ref": "master",
+      "url": "https://github.com/openfl/extension-webview"
     },
     {
       "name": "discord_rpc",
