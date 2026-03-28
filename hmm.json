@@ -13,12 +13,12 @@
     {
       "name": "flixel",
       "type": "haxelib",
-      "version": "4.9.0"
+      "version": "4.11.0"
     },
     {
       "name": "flixel-addons",
       "type": "haxelib",
-      "version": "2.10.0"
+      "version": "2.11.0"
     },
     {
       "name": "flixel-tools",
@@ -28,7 +28,7 @@
     {
       "name": "flixel-ui",
       "type": "haxelib",
-      "version": "2.3.3"
+      "version": "2.4.0"
     },
     {
       "name": "hxcpp",
@@ -37,8 +37,7 @@
     },
     {
       "name": "actuate",
-      "type": "haxelib",
-      "version": null
+      "type": "haxelib"
     },
     {
       "name": "faxe",
@@ -49,13 +48,11 @@
     },
     {
       "name": "hscript",
-      "type": "haxelib",
-      "version": null
+      "type": "haxelib"
     },
     {
       "name": "hxvm-luajit",
-      "type": "haxelib",
-      "version": null
+      "type": "haxelib"
     },
     {
       "name": "extension-webview",
@@ -73,8 +70,10 @@
     },
     {
       "name": "linc_luajit",
-      "type": "haxelib",
-      "version": null
+      "type": "git",
+      "dir": null,
+      "ref": "master",
+      "url": "https://github.com/Daninnocent/linc_luajit"
     }
   ]
 }
